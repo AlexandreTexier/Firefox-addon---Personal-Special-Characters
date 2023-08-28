@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- https://developer.mozilla.org/fr/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension -->
+    <!-- https://extensionworkshop.com/documentation/publish/package-your-extension/ -->
+
+
+    <!-- https://github.com/phts/firefox-special-characters/blob/master/src/popup/index.html -->
+    
+    <table class="main">
+        <tr class="head"><th>Symbole</th><th colspan="2">HTML entities</th><th>Unicode</th></tr>
+
+        <tr class="category"><th colspan="4">Espaces</th></tr>
+        <tr><td><span>&nbsp;</span></td><td>&amp;nbsp;</td><td>&amp;#160;</td><td>No-break space</td></tr>
+        <tr><td><span>&#8239;</span></td><td>&amp;#8239;</td><td>&amp;#x202f;</td><td>Narrow no-break space</td></tr>
+
+        <tr class="category"><th colspan="4">Flèches</th></tr>
+        <tr><td>&#8592;</td><td>&amp;larr;</td><td>&amp;#8592;</td><td>Leftwards arrow</td></tr>
+        <tr><td>&#8593;</td><td>&amp;uarr;</td><td>&amp;#8593;</td><td>Upwards arrow</td></tr>
+        <tr><td>&#8594;</td><td>&amp;rarr;</td><td>&amp;#8594;</td><td>Rightwards arrow</td></tr>
+        <tr><td>&#8595;</td><td>&amp;darr;</td><td>&amp;#8595;</td><td>Downwards arrow</td></tr>
+
+        <tr class="category"><th colspan="4">Signes divers</th></tr>
+        <tr><td>&#8217;</td><td>&amp;#x2019;</td><td>&amp;8217;</td><td>Apostrophe</td></tr>
+        <tr><td>&#171;</td><td>&amp;#171;</td><td>&amp;#xAB;</td><td>Guillemet double fr (l)</td></tr>
+        <tr><td>&#187;</td><td>&amp;#187;</td><td>&amp;#xBB;</td><td>Guillemet double fr (r)</td></tr>
+        <tr><td>&#8249;</td><td>&amp;#8249;</td><td>&amp;#x2039;</td><td>Guillemet simple fr (l)</td></tr>
+        <tr><td>&#8250;</td><td>&amp;#8250;</td><td>&amp;#x203A;</td><td>Guillemet simple fr (r)</td></tr>
+        <tr><td>&#8220;</td><td>&amp;#8220;</td><td>&amp;#x2039;</td><td>Double quote (l)</td></tr>
+        <tr><td>&#8221;</td><td>&amp;#8221;</td><td>&amp;#x201D;</td><td>Double quote (r)</td></tr>
+        <tr><td>&#8216;</td><td>&amp;#8216;</td><td>&amp;#x2018;</td><td>Single quote (l)</td></tr>
+        <tr><td>&#8217;</td><td>&amp;#8217;</td><td>&amp;#x2019;</td><td>Single quote (r)</td></tr>
+        <tr><td>&#215;</td><td>&amp;times;</td><td>&amp;#215;</td><td>Multiplication sign</td></tr>
+        <tr><td>&#8230;</td><td>&amp;hellip;</td><td>&amp;#8230;</td><td>Ellipsis</td></tr>
+        <tr><td>&#124;</td><td>&amp;#x7C;</td><td>&amp;#124;</td><td>Pipe</td></tr>
+        <tr><td>&#339;</td><td>&amp;#339;</td><td>&amp;#x153;</td><td>Digram oe</td></tr>
+        <tr><td>&#338;</td><td>&amp;#x152;</td><td>&amp;#x153;</td><td>Digram OE</td></tr>
+    </table>
+
+    <script src="main.js"></script>
+</body>
+</html>

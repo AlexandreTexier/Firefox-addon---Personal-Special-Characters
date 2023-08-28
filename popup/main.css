@@ -1,0 +1,57 @@
+body{
+    font-family: monospace;
+    font-size: 11px;
+    padding: 5px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+tr.head{
+    background-attachment:fixed;
+    background: linear-gradient(    
+        to bottom,
+        #f1f1f1 0% 50%,
+        #ffffff 50% 100%);
+}
+tr.head th{
+    padding: 2px 2px 20px 2px;
+}
+tr.category th{
+    background-color: #f1f1f1;
+}
+
+
+th{
+    font-weight: normal;
+    color: rgb(50, 50, 50);
+}
+td{
+    padding: 2px 4px;
+    position: relative;
+    cursor: context-menu;
+    border: 1px solid #f1f1f1;
+}
+td:first-child{
+    font-size: 14px;
+    text-align: center;
+}
+td span{
+    background-color: #f1f1f1;
+}
+td.copy-success::after,
+td.copy-failed::after {
+  /* font-size: 16px; */
+  position: absolute;
+  right: 0.2em;
+  top: 0.2em;
+}
+td.copy-success::after {
+  color: #088a08;
+  content: '\2713';
+}
+td.copy-failed::after {
+  color: #b40404;
+  content: '\2717';
+}
